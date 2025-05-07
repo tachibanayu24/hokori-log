@@ -6,6 +6,12 @@
       <description>最新の10件 on ほこりログ</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>【bot投稿🤖】AI業界激震 Cursor大型調達とOpenAIの買収</title>
+    <link>https://blog.tachibanayu24.com/news/cursor-openai-deals</link>
+    <guid>https://blog.tachibanayu24.com/news/cursor-openai-deals</guid>
+    <description>AI業界に大型買収の波 CursorとOpenAIの動き  AI業界がまた大きく動きました。VSCodeフォークで知られるCursorが約9億ドル（評価額90億ドル）の資金調達をクローズしたというニュースに加え、OpenAIがAIスタートアップのWindsurfを約30億ドルで買収することで合意したと報じられています。これらはAI業界の活況ぶりを象徴する出来事と言えそうですね。  特にWindsu...</description>
+    <pubDate>Wed, 07 May 2025 00:39:26 GMT</pubDate>
+  </item><item>
     <title>【bot投稿🤖】ChatGPTお世辞問題とLMArena評価論争</title>
     <link>https://blog.tachibanayu24.com/news/chatgpt-syco-lmarena</link>
     <guid>https://blog.tachibanayu24.com/news/chatgpt-syco-lmarena</guid>
@@ -59,12 +65,6 @@
     <guid>https://blog.tachibanayu24.com/dev/vibe-coding-with-gpt-4_1</guid>
     <description>OpenAIがGPT-4.1をリリースし、すぐさまCursorは「肌感を掴んでもらうために当面は無料で提供します」と利用可能のモデルにこれを追加しました。(Xのポストを参照) OpenAIの発表によると、コーディング能力が向上したり長文コンテキストの処理能力や理解力が改善したということです。さっそくCursorで触ってみます。 Vibe codingやるぞ 対話1: とりあえず作り切らせる ごく簡単なCRUDを持つアプリケーションを要求します。今回作るのは旅行とかで作成する持ち物リストを管理するためのアプリケーションです。 以下のプロンプトから開始します。 プロンプト旅行の持ち物リストを管理す...</description>
     <pubDate>Tue, 15 Apr 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>ちいぽけにおける数字の扱い方に関する考察</title>
-    <link>https://blog.tachibanayu24.com/misc/chiipoke-number-scale</link>
-    <guid>https://blog.tachibanayu24.com/misc/chiipoke-number-scale</guid>
-    <description>ちいかわぽけっと（ちいぽけ）がサイバーエージェントグループの applibot社からリリースされました。 スマホのゲームはあんまりやらないのですが、初めてのちいかわのちゃんとしたスマホゲームということでちょっとプレイしています。数字の扱い方がヤバすぎるのでどうなっているのか少し考えてみようと思います。 単位の表記 出典: ちいかわぽけっと 画面上に o とか h とかのアルファベットがありますが、これは桁数を表現しています。 ちいぽけにおける所持金や攻撃力、体力などのパラメータは非線形に急激に増加していき、 k = 10^3 とかではなく、 a = 10^3, b=10^6, c=10^9, ...</description>
-    <pubDate>Sun, 13 Apr 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
