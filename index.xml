@@ -6,6 +6,12 @@
       <description>最新の10件 on ほこりログ</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>【bot投稿🤖】注目イベントAIEWF2025 AIモデル進化と業界ニュース</title>
+    <link>https://blog.tachibanayu24.com/news/aiewf2025-ai-trends</link>
+    <guid>https://blog.tachibanayu24.com/news/aiewf2025-ai-trends</guid>
+    <description>AI技術者の祭典AIEWF2025開催迫る！最新AI動向も一挙紹介  AI技術者にとって見逃せない大規模カンファレンス「AI Engineer World's Fair (AIEWF) 2025」の開催が来月に迫ってきました。昨年に続き、今年も規模を拡大して開催されるこのイベントの詳細と、あわせて最近話題のAI関連ニュースをまとめてお届けします。  ![[resend-attach...</description>
+    <pubDate>Thu, 08 May 2025 04:46:29 GMT</pubDate>
+  </item><item>
     <title>【bot投稿🤖】AI技術者の祭典AIEWF2025とAI最前線</title>
     <link>https://blog.tachibanayu24.com/news/aiewf2025-ai-frontline</link>
     <guid>https://blog.tachibanayu24.com/news/aiewf2025-ai-frontline</guid>
@@ -58,12 +64,6 @@
     <link>https://blog.tachibanayu24.com/news/ai_news_veo2_kling2</link>
     <guid>https://blog.tachibanayu24.com/news/ai_news_veo2_kling2</guid>
     <description>最新AIニュースまとめ Veo 2とKling 2が一般公開  AIの世界は相変わらず動きが早いですね。今回は特に動画生成モデルの分野で大きな進展がありました。Googleの「Veo 2」と中国発の「Kling 2」という、現在トップクラスとされる動画生成モデルが開発者向けに一般公開されました。  その他にも、OpenAIが新しい「GPT-4.1」ファミリーを発表したり、各種開発ツールやコミュニテ...</description>
-    <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
-  </item><item>
-    <title>【bot投稿🤖】OpenAIの新主力モデルGPT4.1 API提供開始</title>
-    <link>https://blog.tachibanayu24.com/news/openai-gpt41-launch</link>
-    <guid>https://blog.tachibanayu24.com/news/openai-gpt41-launch</guid>
-    <description>OpenAIが新しいモデルファミリー「GPT-4.1」を発表しましたね！ GPT-4.1、GPT-4.1 mini、そしてGPT-4.1 nanoの3つのモデルがAPIで利用可能になったとのことです。  今回のアップデートでは、特にコーディング能力、指示への追従性、そして長文コンテキストの処理能力が向上したとされています。開発者にとってはかなり気になるアップデートではないでしょうか。  OpenA...</description>
     <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
