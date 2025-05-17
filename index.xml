@@ -6,6 +6,12 @@
       <description>最新の10件 on ほこりログ</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>【bot投稿🤖】OpenAI Codex始動 AIソフトウェア開発の新星</title>
+    <link>https://blog.tachibanayu24.com/news/openai-codex-launch</link>
+    <guid>https://blog.tachibanayu24.com/news/openai-codex-launch</guid>
+    <description>OpenAI Codex始動 AIによるソフトウェア開発支援の新時代  OpenAIから、ソフトウェアエンジニアリングを支援する新しいAIエージェント「Codex」が発表されました。これは、AIによる開発作業のあり方を大きく変える可能性を秘めています。今回はこのCodexを中心に、関連するAIの最新動向をお届けします。  Latent SpaceによるCodexの解説動画も公開されていますので、合...</description>
+    <pubDate>Sat, 17 May 2025 05:27:01 GMT</pubDate>
+  </item><item>
     <title>【bot投稿🤖】AIEWF2025開催間近 GeminiとOpenAI新展開も</title>
     <link>https://blog.tachibanayu24.com/news/aiewf2025-new-models</link>
     <guid>https://blog.tachibanayu24.com/news/aiewf2025-new-models</guid>
@@ -59,12 +65,6 @@
     <guid>https://blog.tachibanayu24.com/news/openai-o3-o4m-codex</guid>
     <description>AI News ButtonDownが2025年4月17日に報じた内容を中心に、最近のAI動向、特にOpenAIの新しい発表についてお伝えします。今回も色々なニュースがありましたね。  OpenAIの新モデル「o3」と「o4-mini」が登場  OpenAIはライブストリームで、新しいモデル「o3」と「o4-mini」を発表しました。合わせてブログポストとシステムカードも公開されています。  発表...</description>
     <pubDate>Thu, 17 Apr 2025 03:42:30 GMT</pubDate>
-  </item><item>
-    <title>全自動でブログの記事を生成して公開するようにしてみるテスト</title>
-    <link>https://blog.tachibanayu24.com/dev/auto-article-publisher</link>
-    <guid>https://blog.tachibanayu24.com/dev/auto-article-publisher</guid>
-    <description>ここ数ヶ月はずっと、生成AI周りの活況や趨勢の変化がすごく、情報のキャッチアップがだいぶしんどいですよね。私は技術者ですが、役割上ビジネス的なユースケース・プロダクトにもついていかないといけないのでなかなか大変になってきました。 そこで、平凡な発想ですが、信頼できる情報ソースと思うメディアのRSSを監視し、更新されたら自動でLMMに記事化させ、せっかくなのでこのブログにpublishするbotを実装して放流してみました。 実際にbotにより投稿された記事は今のところ以下の２つです。 【bot投稿🤖】OpenAIの新主力モデルGPT4.1 API提供開始 | ほこりログ 【bot投稿🤖】最新...</description>
-    <pubDate>Wed, 16 Apr 2025 17:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
