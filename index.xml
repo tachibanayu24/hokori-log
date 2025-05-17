@@ -18,18 +18,6 @@
     <description>AIEWF2025開催間近 GeminiとOpenAI新展開も  今年もAIエンジニアリング界隈が熱い季節がやってきました。昨年大きな注目を集めた「AI Engineer World's Fair (AIEWF)」が、2025年も開催されます。今回は規模を2倍に拡大し、さらに充実した内容となるようです。この記事では、AIEWF2025の概要と、あわせて最近話題になっているAIモデルやツールの動向に...</description>
     <pubDate>Thu, 08 May 2025 05:47:44 GMT</pubDate>
   </item><item>
-    <title>【bot投稿🤖】注目イベントAIEWF2025 AIモデル進化と業界ニュース</title>
-    <link>https://blog.tachibanayu24.com/news/aiewf2025-ai-trends</link>
-    <guid>https://blog.tachibanayu24.com/news/aiewf2025-ai-trends</guid>
-    <description>AI技術者の祭典AIEWF2025開催迫る！最新AI動向も一挙紹介  AI技術者にとって見逃せない大規模カンファレンス「AI Engineer World's Fair (AIEWF) 2025」の開催が来月に迫ってきました。昨年に続き、今年も規模を拡大して開催されるこのイベントの詳細と、あわせて最近話題のAI関連ニュースをまとめてお届けします。  ![[resend-attach...</description>
-    <pubDate>Thu, 08 May 2025 04:46:29 GMT</pubDate>
-  </item><item>
-    <title>【bot投稿🤖】AI技術者の祭典AIEWF2025とAI最前線</title>
-    <link>https://blog.tachibanayu24.com/news/aiewf2025-ai-frontline</link>
-    <guid>https://blog.tachibanayu24.com/news/aiewf2025-ai-frontline</guid>
-    <description>AI技術者の祭典AIEWF2025開催とAI最前線  今年もAI技術者にとって見逃せないイベント「AI Engineer World's Fair (AIEWF)」の開催が近づいてきました。今回は、AIEWF 2025の最新情報とともに、ここ最近のAI業界における注目すべき動向をまとめてお伝えします。  AI Engineer World's Fair 2025: スケールアップして再び開催  昨...</description>
-    <pubDate>Thu, 08 May 2025 03:45:18 GMT</pubDate>
-  </item><item>
     <title>【bot投稿🤖】AI業界激震 Cursor大型調達とOpenAIの買収</title>
     <link>https://blog.tachibanayu24.com/news/cursor-openai-deals</link>
     <guid>https://blog.tachibanayu24.com/news/cursor-openai-deals</guid>
@@ -65,6 +53,18 @@
     <guid>https://blog.tachibanayu24.com/news/openai-o3-o4m-codex</guid>
     <description>AI News ButtonDownが2025年4月17日に報じた内容を中心に、最近のAI動向、特にOpenAIの新しい発表についてお伝えします。今回も色々なニュースがありましたね。  OpenAIの新モデル「o3」と「o4-mini」が登場  OpenAIはライブストリームで、新しいモデル「o3」と「o4-mini」を発表しました。合わせてブログポストとシステムカードも公開されています。  発表...</description>
     <pubDate>Thu, 17 Apr 2025 03:42:30 GMT</pubDate>
+  </item><item>
+    <title>全自動でブログの記事を生成して公開するようにしてみるテスト</title>
+    <link>https://blog.tachibanayu24.com/dev/auto-article-publisher</link>
+    <guid>https://blog.tachibanayu24.com/dev/auto-article-publisher</guid>
+    <description>ここ数ヶ月はずっと、生成AI周りの活況や趨勢の変化がすごく、情報のキャッチアップがだいぶしんどいですよね。私は技術者ですが、役割上ビジネス的なユースケース・プロダクトにもついていかないといけないのでなかなか大変になってきました。 そこで、平凡な発想ですが、信頼できる情報ソースと思うメディアのRSSを監視し、更新されたら自動でLMMに記事化させ、せっかくなのでこのブログにpublishするbotを実装して放流してみました。 実際にbotにより投稿された記事は今のところ以下の２つです。 【bot投稿🤖】OpenAIの新主力モデルGPT4.1 API提供開始 | ほこりログ 【bot投稿🤖】最新...</description>
+    <pubDate>Wed, 16 Apr 2025 17:00:00 GMT</pubDate>
+  </item><item>
+    <title>【bot投稿🤖】最新AIニュース Veo 2とKling 2が一般公開 GPT-4.1も</title>
+    <link>https://blog.tachibanayu24.com/news/ai_news_veo2_kling2</link>
+    <guid>https://blog.tachibanayu24.com/news/ai_news_veo2_kling2</guid>
+    <description>最新AIニュースまとめ Veo 2とKling 2が一般公開  AIの世界は相変わらず動きが早いですね。今回は特に動画生成モデルの分野で大きな進展がありました。Googleの「Veo 2」と中国発の「Kling 2」という、現在トップクラスとされる動画生成モデルが開発者向けに一般公開されました。  その他にも、OpenAIが新しい「GPT-4.1」ファミリーを発表したり、各種開発ツールやコミュニテ...</description>
+    <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
