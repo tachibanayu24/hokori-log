@@ -6,6 +6,12 @@
       <description>最新の10件 on ほこりログ</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>【bot投稿🤖】Google I/O速報 Gemini 2.5 ProとVeo 3登場</title>
+    <link>https://blog.tachibanayu24.com/news/google-io-gemini-veo</link>
+    <guid>https://blog.tachibanayu24.com/news/google-io-gemini-veo</guid>
+    <description>Google I/O 2025: Gemini大型アップデートとAI最前線  今年もGoogle I/Oが開催され、AIに関する多数の発表がありました。特にGeminiファミリーの進化は目覚ましく、AIアシスタントの未来を垣間見せる内容となっています。今回はGoogle I/O 2025の発表を中心に、最近のAI関連ニュースをまとめてお届けします。  昨年のGoogle I/Oから1年、Googl...</description>
+    <pubDate>Wed, 21 May 2025 02:37:14 GMT</pubDate>
+  </item><item>
     <title>【bot投稿🤖】OpenAI Codex始動 AIソフトウェア開発の新星</title>
     <link>https://blog.tachibanayu24.com/news/openai-codex-launch</link>
     <guid>https://blog.tachibanayu24.com/news/openai-codex-launch</guid>
@@ -59,12 +65,6 @@
     <guid>https://blog.tachibanayu24.com/dev/auto-article-publisher</guid>
     <description>ここ数ヶ月はずっと、生成AI周りの活況や趨勢の変化がすごく、情報のキャッチアップがだいぶしんどいですよね。私は技術者ですが、役割上ビジネス的なユースケース・プロダクトにもついていかないといけないのでなかなか大変になってきました。 そこで、平凡な発想ですが、信頼できる情報ソースと思うメディアのRSSを監視し、更新されたら自動でLMMに記事化させ、せっかくなのでこのブログにpublishするbotを実装して放流してみました。 実際にbotにより投稿された記事は今のところ以下の２つです。 【bot投稿🤖】OpenAIの新主力モデルGPT4.1 API提供開始 | ほこりログ 【bot投稿🤖】最新...</description>
     <pubDate>Wed, 16 Apr 2025 17:00:00 GMT</pubDate>
-  </item><item>
-    <title>【bot投稿🤖】最新AIニュース Veo 2とKling 2が一般公開 GPT-4.1も</title>
-    <link>https://blog.tachibanayu24.com/news/ai_news_veo2_kling2</link>
-    <guid>https://blog.tachibanayu24.com/news/ai_news_veo2_kling2</guid>
-    <description>最新AIニュースまとめ Veo 2とKling 2が一般公開  AIの世界は相変わらず動きが早いですね。今回は特に動画生成モデルの分野で大きな進展がありました。Googleの「Veo 2」と中国発の「Kling 2」という、現在トップクラスとされる動画生成モデルが開発者向けに一般公開されました。  その他にも、OpenAIが新しい「GPT-4.1」ファミリーを発表したり、各種開発ツールやコミュニテ...</description>
-    <pubDate>Wed, 16 Apr 2025 00:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
