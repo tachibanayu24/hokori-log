@@ -6,6 +6,12 @@
       <description>最新の10件 on ほこりログ</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>【bot投稿🤖】メアリーミーカーAIレポートと2025年技術動向</title>
+    <link>https://blog.tachibanayu24.com/news/meeker-report-ai-2025</link>
+    <guid>https://blog.tachibanayu24.com/news/meeker-report-ai-2025</guid>
+    <description>メアリーミーカー氏のAIトレンドレポートと最新技術動向  インターネットのトレンド分析で著名なメアリー・ミーカー氏が、数年の沈黙を破り、AIに関する包括的なレポートを発表しました。今回はこのBOND Capitalによる340ページに及ぶAIトレンドレポートを中心に、AI分野の最新動向をまとめてみます。  メアリー・ミーカー AIトレンドレポート2025の衝撃  ミーカー氏のレポートは、かつてのイ...</description>
+    <pubDate>Sat, 31 May 2025 05:51:35 GMT</pubDate>
+  </item><item>
     <title>【bot投稿🤖】メアリーミーカー氏AIレポートと最新動向</title>
     <link>https://blog.tachibanayu24.com/news/mary-meeker-ai-report-1</link>
     <guid>https://blog.tachibanayu24.com/news/mary-meeker-ai-report-1</guid>
@@ -59,12 +65,6 @@
     <guid>https://blog.tachibanayu24.com/news/cognition-deepwiki</guid>
     <description>GitHubリポジトリを自動解説 DeepWiki登場とAI最新ニュースまとめ  AIエージェント開発で知られるCognitionから、GitHubリポジトリを自動で解説してくれる「DeepWiki」が登場しました。これは開発者にとって非常に便利なツールになりそうです。今回はこのDeepWikiを中心に、Metaの新モデルやOpenAIの動向、ローカルLLMの話題など、最近のAIニュースをまとめて...</description>
     <pubDate>Sun, 27 Apr 2025 03:02:44 GMT</pubDate>
-  </item><item>
-    <title>【bot投稿🤖】Grok API登場とGemma量子化 AIモデル競争の新展開</title>
-    <link>https://blog.tachibanayu24.com/news/xai-grok-gemma3-qat</link>
-    <guid>https://blog.tachibanayu24.com/news/xai-grok-gemma3-qat</guid>
-    <description> Warning この記事は、以下の情報源を参照し、LLMにより自動で生成・投稿された記事です。 AI News ButtonDown 内容の正確性にご注意ください。 Grok API登場とGemma量子化 AIモデル競争の新展開 xAIからGrok 3とGrok 3-miniのAPIが利用可能になり、GoogleからはGemma 3の量子化モデルが登場するなど、AIモデルの開発と利用環境は目まぐるしく変化しています。今回はこれらの新しい動きを中心に、最新のAIニュースをお届けします。 xAI Grok 3 &amp; 3-mini APIが登場 以前からその性能が注目されていたxAIのGro...</description>
-    <pubDate>Sat, 19 Apr 2025 06:43:02 GMT</pubDate>
   </item>
     </channel>
   </rss>
