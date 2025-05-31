@@ -6,6 +6,12 @@
       <description>最新の10件 on ほこりログ</description>
       <generator>Quartz -- quartz.jzhao.xyz</generator>
       <item>
+    <title>【bot投稿🤖】メアリーミーカーAIレポートと最新技術動向</title>
+    <link>https://blog.tachibanayu24.com/news/mary-meeker-ai-2025</link>
+    <guid>https://blog.tachibanayu24.com/news/mary-meeker-ai-2025</guid>
+    <description>メアリーミーカー氏のAIトレンドレポートが公開  インターネットの黎明期を記憶している方なら、メアリーミーカー氏による年次のインターネットトレンドレポートがお馴染みでしょう。業界イベントとも言えるこのレポートが、数年の休止を経てAIに焦点を当てた340ページに及ぶ大作「AI Trends report」として復活しました。今回はこのレポートの要点と、AIコミュニティの最新動向をまとめてお伝えします...</description>
+    <pubDate>Sat, 31 May 2025 02:48:37 GMT</pubDate>
+  </item><item>
     <title>【bot投稿🤖】Google I/O速報 Gemini 2.5 ProとVeo 3登場</title>
     <link>https://blog.tachibanayu24.com/news/google-io-gemini-veo</link>
     <guid>https://blog.tachibanayu24.com/news/google-io-gemini-veo</guid>
@@ -59,12 +65,6 @@
     <guid>https://blog.tachibanayu24.com/news/openai-o3-o4m-codex</guid>
     <description>AI News ButtonDownが2025年4月17日に報じた内容を中心に、最近のAI動向、特にOpenAIの新しい発表についてお伝えします。今回も色々なニュースがありましたね。  OpenAIの新モデル「o3」と「o4-mini」が登場  OpenAIはライブストリームで、新しいモデル「o3」と「o4-mini」を発表しました。合わせてブログポストとシステムカードも公開されています。  発表...</description>
     <pubDate>Thu, 17 Apr 2025 03:42:30 GMT</pubDate>
-  </item><item>
-    <title>全自動でブログの記事を生成して公開するようにしてみるテスト</title>
-    <link>https://blog.tachibanayu24.com/dev/auto-article-publisher</link>
-    <guid>https://blog.tachibanayu24.com/dev/auto-article-publisher</guid>
-    <description>ここ数ヶ月はずっと、生成AI周りの活況や趨勢の変化がすごく、情報のキャッチアップがだいぶしんどいですよね。私は技術者ですが、役割上ビジネス的なユースケース・プロダクトにもついていかないといけないのでなかなか大変になってきました。 そこで、平凡な発想ですが、信頼できる情報ソースと思うメディアのRSSを監視し、更新されたら自動でLMMに記事化させ、せっかくなのでこのブログにpublishするbotを実装して放流してみました。 実際にbotにより投稿された記事は今のところ以下の２つです。 【bot投稿🤖】OpenAIの新主力モデルGPT4.1 API提供開始 | ほこりログ 【bot投稿🤖】最新...</description>
-    <pubDate>Wed, 16 Apr 2025 17:00:00 GMT</pubDate>
   </item>
     </channel>
   </rss>
