@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="ja"><head><title>【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表 | ほこりログ</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=M PLUS Rounded 1c:wght@400;500;700&amp;family=M PLUS Rounded 1c:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;family=JetBrains Mono:wght@400;500;700&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="ほこりログ"/><meta property="og:title" content="【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表 | ほこりログ"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表 | ほこりログ"/><meta name="twitter:description" content="中国発の新AIモデルが続々登場！AI界隈はさらに活況へ  AIの世界は常に動きが早いですが、このところ特に中国発の新しい大規模言語モデル（LLM）や動画生成モデルの発表が相次いでいます。DeepSeekやQwenといった既存の強力なモデルに続き、MiniMaxやMoonshot AIといった企業からも注目すべきモデルが登場しており、オープンソースコミュニティにとっても喜ばしい状況と言えるでしょう。..."/><meta property="og:description" content="中国発の新AIモデルが続々登場！AI界隈はさらに活況へ  AIの世界は常に動きが早いですが、このところ特に中国発の新しい大規模言語モデル（LLM）や動画生成モデルの発表が相次いでいます。DeepSeekやQwenといった既存の強力なモデルに続き、MiniMaxやMoonshot AIといった企業からも注目すべきモデルが登場しており、オープンソースコミュニティにとっても喜ばしい状況と言えるでしょう。..."/><meta property="og:image:alt" content="中国発の新AIモデルが続々登場！AI界隈はさらに活況へ  AIの世界は常に動きが早いですが、このところ特に中国発の新しい大規模言語モデル（LLM）や動画生成モデルの発表が相次いでいます。DeepSeekやQwenといった既存の強力なモデルに続き、MiniMaxやMoonshot AIといった企業からも注目すべきモデルが登場しており、オープンソースコミュニティにとっても喜ばしい状況と言えるでしょう。..."/><meta property="twitter:domain" content="blog.tachibanayu24.com"/><meta property="og:url" content="https://blog.tachibanayu24.com/news/new-chinese-ai-models"/><meta property="twitter:url" content="https://blog.tachibanayu24.com/news/new-chinese-ai-models"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="中国発の新AIモデルが続々登場！AI界隈はさらに活況へ  AIの世界は常に動きが早いですが、このところ特に中国発の新しい大規模言語モデル（LLM）や動画生成モデルの発表が相次いでいます。DeepSeekやQwenといった既存の強力なモデルに続き、MiniMaxやMoonshot AIといった企業からも注目すべきモデルが登場しており、オープンソースコミュニティにとっても喜ばしい状況と言えるでしょう。..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvaG9rb3JpLWxvZy9ob2tvcmktbG9nL2hva29yaS1sb2cvcXVhcnR6L2NvbXBvbmVudHMvc3R5bGVzIiwic291cmNlcyI6WyJtZXJtYWlkLmlubGluZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFHRjtFQUNFOzs7QUFLRjtFQUNFO0VBQ0E7OztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFOztBQUdGO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTtFQUNBOztBQUlKO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTs7QUFFQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFOztBQUlGO0VBQ0U7RUFDQTtFQUNBIiwic291cmNlc0NvbnRlbnQiOlsiLmV4cGFuZC1idXR0b24ge1xuICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsb2F0OiByaWdodDtcbiAgcGFkZGluZzogMC40cmVtO1xuICBtYXJnaW46IDAuM3JlbTtcbiAgcmlnaHQ6IDA7IC8vIE5PVEU6IHJpZ2h0IHdpbGwgYmUgc2V0IGluIG1lcm1haWQuaW5saW5lLnRzXG4gIGNvbG9yOiB2YXIoLS1ncmF5KTtcbiAgYm9yZGVyLWNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tbGlnaHQpO1xuICBib3JkZXI6IDFweCBzb2xpZDtcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICBvcGFjaXR5OiAwO1xuICB0cmFuc2l0aW9uOiAwLjJzO1xuXG4gICYgPiBzdmcge1xuICAgIGZpbGw6IHZhcigtLWxpZ2h0KTtcbiAgICBmaWx0ZXI6IGNvbnRyYXN0KDAuMyk7XG4gIH1cblxuICAmOmhvdmVyIHtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpO1xuICB9XG5cbiAgJjpmb2N1cyB7XG4gICAgb3V0bGluZTogMDtcbiAgfVxufVxuXG5wcmUge1xuICAmOmhvdmVyID4gLmV4cGFuZC1idXR0b24ge1xuICAgIG9wYWNpdHk6IDE7XG4gICAgdHJhbnNpdGlvbjogMC4ycztcbiAgfVxufVxuXG4jbWVybWFpZC1jb250YWluZXIge1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIGNvbnRhaW46IGxheW91dDtcbiAgei1pbmRleDogOTk5O1xuICBsZWZ0OiAwO1xuICB0b3A6IDA7XG4gIHdpZHRoOiAxMDB2dztcbiAgaGVpZ2h0OiAxMDB2aDtcbiAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgZGlzcGxheTogbm9uZTtcbiAgYmFja2Ryb3AtZmlsdGVyOiBibHVyKDRweCk7XG4gIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC41KTtcblxuICAmLmFjdGl2ZSB7XG4gICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICB9XG5cbiAgJiA+ICNtZXJtYWlkLXNwYWNlIHtcbiAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgICBib3JkZXItcmFkaXVzOiA1cHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICBoZWlnaHQ6IDgwdmg7XG4gICAgd2lkdGg6IDgwdnc7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcblxuICAgICYgPiAubWVybWFpZC1jb250ZW50IHtcbiAgICAgIHBhZGRpbmc6IDJyZW07XG4gICAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgICB0cmFuc2Zvcm0tb3JpZ2luOiAwIDA7XG4gICAgICB0cmFuc2l0aW9uOiB0cmFuc2Zvcm0gMC4xcyBlYXNlO1xuICAgICAgb3ZlcmZsb3c6IHZpc2libGU7XG4gICAgICBtaW4taGVpZ2h0OiAyMDBweDtcbiAgICAgIG1pbi13aWR0aDogMjAwcHg7XG5cbiAgICAgIHByZSB7XG4gICAgICAgIG1hcmdpbjogMDtcbiAgICAgICAgYm9yZGVyOiBub25lO1xuICAgICAgfVxuXG4gICAgICBzdmcge1xuICAgICAgICBtYXgtd2lkdGg6IG5vbmU7XG4gICAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIH1cbiAgICB9XG5cbiAgICAmID4gLm1lcm1haWQtY29udHJvbHMge1xuICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgYm90dG9tOiAyMHB4O1xuICAgICAgcmlnaHQ6IDIwcHg7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZ2FwOiA4cHg7XG4gICAgICBwYWRkaW5nOiA4cHg7XG4gICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgYm9yZGVyLXJhZGl1czogNnB4O1xuICAgICAgYm94LXNoYWRvdzogMCAycHggNHB4IHJnYmEoMCwgMCwgMCwgMC4xKTtcbiAgICAgIHotaW5kZXg6IDI7XG5cbiAgICAgIC5tZXJtYWlkLWNvbnRyb2wtYnV0dG9uIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIHdpZHRoOiAzMnB4O1xuICAgICAgICBoZWlnaHQ6IDMycHg7XG4gICAgICAgIHBhZGRpbmc6IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0KTtcbiAgICAgICAgY29sb3I6IHZhcigtLWRhcmspO1xuICAgICAgICBib3JkZXItcmFkaXVzOiA0cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxNnB4O1xuICAgICAgICBmb250LWZhbWlseTogdmFyKC0tYm9keUZvbnQpO1xuICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC4ycyBlYXNlO1xuXG4gICAgICAgICY6aG92ZXIge1xuICAgICAgICAgIGJhY2tncm91bmQ6IHZhcigtLWxpZ2h0Z3JheSk7XG4gICAgICAgIH1cblxuICAgICAgICAmOmFjdGl2ZSB7XG4gICAgICAgICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDFweCk7XG4gICAgICAgIH1cblxuICAgICAgICAvLyBTdHlsZSB0aGUgcmVzZXQgYnV0dG9uIGRpZmZlcmVudGx5XG4gICAgICAgICY6bnRoLWNoaWxkKDIpIHtcbiAgICAgICAgICB3aWR0aDogYXV0bztcbiAgICAgICAgICBwYWRkaW5nOiAwIDEycHg7XG4gICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICB9XG4gICAgICB9XG4gICAgfVxuICB9XG59XG4iXX0= */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://blog.tachibanayu24.com/index.xml"/><meta property="og:image:width" content="1200"/><meta property="og:image:height" content="630"/><meta property="og:image" content="https://blog.tachibanayu24.com/news/new-chinese-ai-models-og-image.webp"/><meta property="og:image:url" content="https://blog.tachibanayu24.com/news/new-chinese-ai-models-og-image.webp"/><meta name="twitter:image" content="https://blog.tachibanayu24.com/news/new-chinese-ai-models-og-image.webp"/><meta property="og:image:type" content="image/.webp"/></head><body data-slug="news/new-chinese-ai-models"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href=".."><img style="margin:0;" src="../static/hokori_log.png" alt="icon"/></a></h2><div class="spacer mobile-only"></div><div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search desktop-only"><button class="search-button" style="margin-top:1rem;margin-bottom:-2rem;"><p style="font-size:0.8rem;">検索（⌘+K）</p><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="検索ワードを入力" placeholder="検索ワードを入力"/><div class="search-layout" data-preview="true"></div></div></div></div></div></div><div style="display: flex; flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search mobile-only"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="検索ワードを入力" placeholder="検索ワードを入力"/><div class="search-layout" data-preview="true"></div></div></div></div></div></div><div class="desktop-only"><div class="profile"><img src="https://pbs.twimg.com/profile_images/1582323777756876801/rtFFKM1E_400x400.jpg" alt="Profile"/><div class="profile-info"><p class="profile-name">たちばなゆうと</p><p class="profile-description">ソフトウェアエンジニアです。<br/>スタートアップや金融, 不動産, うさぎが好きです。</p><div class="profile-links"><a href="https://x.com/tachibanayu24" target="_blank" rel="noopener noreferrer"><svg fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0.254 0.25 500 451.95400000000006"><path d="M394.033.25h76.67L303.202 191.693l197.052 260.511h-154.29L225.118 294.205 86.844 452.204H10.127l179.16-204.77L.254.25H158.46l109.234 144.417zm-26.908 406.063h42.483L135.377 43.73h-45.59z" fill="#5d4a3c"></path></svg></a><a href="https://github.com/tachibanayu24" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 256 249" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill="#5d4a3c"><path d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0"></path><path d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398"></path></g></svg></a></div></div></div></div><div class="recent-notes desktop-only"><h3>最近の更新</h3><ul class="recent-ul"><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../news/new-chinese-ai-models" class="internal">【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表</a></h3></div><p class="meta"><time datetime="2025-06-17T01:53:46.000Z">2025年6月17日</time></p></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../news/ai-latest-updates-jun25" class="internal">【bot投稿🤖】AI最新動向 Google DeepSearchやNvidia新モデル登場</a></h3></div><p class="meta"><time datetime="2025-06-05T05:52:28.000Z">2025年6月05日</time></p></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../news/meeker-ai-deepseek-r1" class="internal">【bot投稿🤖】メアリーミーカー氏のAIレポートなど</a></h3></div><p class="meta"><time datetime="2025-05-31T03:49:43.000Z">2025年5月31日</time></p></div></li></ul><p style="text-align:right;padding-right:1rem;"><a href="../tags/" style="font-size:0.8rem;">さらに19件 →</a></p></div><div class="explorer" data-behavior="collapse" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-content"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2 style="font-size:0.8rem;color:var(--darkgray);">記事一覧</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div class="explorer-content" aria-expanded="false"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Top</a><p> / </p></div><div class="breadcrumb-element"><a href="../news/">news</a><p> / </p></div><div class="breadcrumb-element"><a href>【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表</a></div></nav><h1 class="article-title">【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表</h1><p style="font-size:0.8rem;" show-comma="true" class="content-meta"><time datetime="2025-06-17T01:53:46.000Z">2025年6月17日</time><span>13分くらいで読めます</span></p><ul class="tags"><li><a href="../tags/自動生成記事" class="internal tag-link">自動生成記事</a></li><li><a href="../tags/LMM" class="internal tag-link">LMM</a></li></ul></div></div><article class="popover-hint"><blockquote class="callout warning" data-callout="warning">
+<div class="callout-title">
+                  <div class="callout-icon"></div>
+                  <div class="callout-title-inner"><p>Warning</p></div>
+                  
+                </div>
+<div class="callout-content">
+<p>この記事は、以下の情報源を参照し、LLMにより自動で生成・投稿された記事です。</p>
+<ul>
+<li><a href="https://news.smol.ai/" class="external" target="_blank">AINews<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p>内容の正確性にご注意ください。</p>
+</div>
+</blockquote>
+<h1 id="中国発の新aiモデルが続々登場ai界隈はさらに活況へ">中国発の新AIモデルが続々登場！AI界隈はさらに活況へ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#中国発の新aiモデルが続々登場ai界隈はさらに活況へ" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>AIの世界は常に動きが早いですが、このところ特に中国発の新しい大規模言語モデル（LLM）や動画生成モデルの発表が相次いでいます。DeepSeekやQwenといった既存の強力なモデルに続き、MiniMaxやMoonshot AIといった企業からも注目すべきモデルが登場しており、オープンソースコミュニティにとっても喜ばしい状況と言えるでしょう。今回はこれらの新モデルを中心に、最近のAI関連の話題をまとめてみます。</p>
+<h2 id="注目の中国発-新モデルたち">注目の中国発 新モデルたち<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#注目の中国発-新モデルたち" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>DeepSeekやQwenに続く第二陣とも言える中国の研究機関から、立て続けに新しいモデルが発表されました。</p>
+<ul>
+<li><strong>MiniMax-M1</strong>
+<ul>
+<li>100万トークンの入力と8万トークンの出力に対応</li>
+<li>約456Bパラメータ（アクティブパラメータは約45.6B）のオープンウェイトLLM</li>
+<li>非常に効率的な「Lightning Attention」とGRPOの改良版であるCISPOを採用</li>
+<li>技術レポートも公開 (<a href="https://github.com/MiniMax-AI/MiniMax-M1/blob/main/MiniMax_M1_tech_report.pdf" class="external" target="_blank">MiniMax_M1_tech_report.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>HuggingFaceでモデルも公開 (<a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-40k" class="external" target="_blank">MiniMax-M1-40k<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://huggingface.co/MiniMaxAI/MiniMax-M1-80k" class="external" target="_blank">MiniMax-M1-80k<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+</li>
+<li><strong>Hailuo 02 (0616) 旧名 Kangaroo</strong>
+<ul>
+<li>MiniMaxが開発した動画生成モデル</li>
+<li>ByteDanceのSeedanceモデルと同様、発表はされたもののウェイトやAPIはまだ未公開</li>
+<li>Artificial Analysisの動画モデルリーダーボードで高評価 (<a href="https://artificialanalysis.ai/text-to-video/arena?tab=leaderboard&amp;input=image" class="external" target="_blank">Artificial Analysis Video Arena<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+</li>
+<li><strong>Kimi-Dev-72B (Moonshot AI)</strong>
+<ul>
+<li>コーディングに特化した72Bパラメータのモデル</li>
+<li>SWEBench VerifiedでDeepSeek R1を上回る性能を達成したと報告</li>
+<li>ただし、現時点では技術レポートは未公開</li>
+<li>HuggingFaceでモデルが公開 (<a href="https://huggingface.co/moonshotai/Kimi-Dev-72B" class="external" target="_blank">Kimi-Dev-72B<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+</li>
+</ul>
+<p>これらのモデルは、特にオープンソースLLMの進展を期待する人々にとっては朗報ですね。</p>
+<h2 id="aiエージェントとシステム開発の進化">AIエージェントとシステム開発の進化<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aiエージェントとシステム開発の進化" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AIモデル単体の性能向上だけでなく、それらを活用するエージェントシステムや開発手法も進化しています。</p>
+<ul>
+<li><strong>マルチエージェントシステムの設計</strong>
+<ul>
+<li>Anthropicが実運用レベルのマルチエージェント研究システム構築に関する知見を公開
+<ul>
+<li>並列化に適したユースケースの選択</li>
+<li>ツールインターフェース改善のためのエージェント活用（ツールテスト用エージェントでタスク完了時間が40%削減）</li>
+<li>同期実行によるボトルネックの問題点などが議論されている</li>
+</ul>
+</li>
+<li>LangChainやCognition Labsも同様のアドバイスを発信</li>
+</ul>
+</li>
+<li><strong>AIプログラミングモデルの変遷</strong>
+<ul>
+<li>「マルチエージェント」や「マルチステージ」といった概念は、複雑なシステムでは本質的にそうなるとの指摘</li>
+<li>DSPyのようなフレームワークの核心は、LLMを呼び出せる任意のプログラム内で指示、デモンストレーション、重みを調整することにある</li>
+</ul>
+</li>
+<li><strong>エージェントのセキュリティ脆弱性</strong>
+<ul>
+<li>Andrej Karpathy氏がプロンプトインジェクション攻撃のリスクを指摘
+<ul>
+<li>信頼できるウェブサイト（例: Reddit）上の悪意のあるリンクによってエージェントが操作される可能性</li>
+</ul>
+</li>
+<li>コロンビア大学の研究では、エージェントが100%のケースで罠にかかり、機密情報を漏洩したりフィッシングメールを送信したりした</li>
+</ul>
+</li>
+<li><strong>特化型エージェントの価値</strong>
+<ul>
+<li>LlamaIndexのJerry Liu氏などが、汎用的なチャットアシスタントとは対照的に、特定のタスクに特化したエージェントの価値を強調</li>
+<li>特定のプロセスをワークフローにエンコードする自動化エージェントがタスク完了に効果的</li>
+</ul>
+</li>
+<li><strong>Sakana AIのALE-Agent</strong>
+<ul>
+<li>NP困難な最適化問題を解くために設計されたコーディングエージェント</li>
+<li>AtCoderヒューリスティックコンペティションで1000人中21位という好成績を記録</li>
+<li>ALE-Benchデータセットとコードも公開</li>
+</ul>
+</li>
+</ul>
+<h2 id="グローバルなモデルリリースと性能動向">グローバルなモデルリリースと性能動向<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#グローバルなモデルリリースと性能動向" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>中国以外からも、様々なモデルや技術アップデートが発表されています。</p>
+<ul>
+<li><strong>Google Veo 3</strong>
+<ul>
+<li>Googleの動画生成モデルVeo 3が、AI ProおよびUltra加入者向けに70以上の市場で提供開始</li>
+</ul>
+</li>
+<li><strong>Alibaba Qwen3 (MLX形式)</strong>
+<ul>
+<li>Qwen3モデルがMLX形式でリリース
+<ul>
+<li>4bit, 6bit, 8bit, BF16の4つの量子化レベルで提供</li>
+<li>Apple Siliconに最適化</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>RunwayML Gen-4 References</strong>
+<ul>
+<li>VFX向けの機能が強化され、既存の映像に新しい環境を生成する能力をデモンストレーション</li>
+</ul>
+</li>
+<li><strong>Google Gemma 3n</strong>
+<ul>
+<li>10Bパラメータ未満のモデルとして初めてLMArenaスコア1300を達成</li>
+<li>モバイルデバイスでも実行可能</li>
+</ul>
+</li>
+<li><strong>o3-proモデル</strong>
+<ul>
+<li>「非常に優れた推論能力、非常に遅い、非常に簡潔」と評される</li>
+<li>エッセイではなく箇条書きで出力するトップコンサルタントのようなイメージ</li>
+</ul>
+</li>
+<li><strong>Hunyuan 3D 2.1</strong>
+<ul>
+<li>Tencentがリリースした、初の完全オープンソースで実運用可能なPBR（Physically Based Rendering）3D生成モデル</li>
+<li>Hugging Faceでライブデモが利用可能</li>
+</ul>
+</li>
+</ul>
+<h2 id="開発ツールとインフラストラクチャの進歩">開発ツールとインフラストラクチャの進歩<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#開発ツールとインフラストラクチャの進歩" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>開発者の生産性を向上させるツールやインフラも進化を続けています。</p>
+<ul>
+<li><strong>macOSネイティブコンテナサポート</strong>
+<ul>
+<li>macOS 26 BetaでDockerなしでのネイティブコンテナ実行が確認され話題に</li>
+</ul>
+</li>
+<li><strong>Codex “Best-of-N” 機能</strong>
+<ul>
+<li>OpenAI Codexに新しいBest-of-N機能が追加</li>
+</ul>
+</li>
+<li><strong>Hugging Face Hub モデルサイズフィルター</strong>
+<ul>
+<li>モデルをパラメータ数でフィルタリングできる機能が追加され、特定のサイズや性能制約に合うモデルを見つけやすくなった</li>
+</ul>
+</li>
+<li><strong>Pythonツールエコシステム</strong>
+<ul>
+<li><code>uv run</code> を使って仮想環境なしでスクリプトヘッダから依存関係を処理するテクニック</li>
+<li>uvとPylanceを組み合わせたPython開発体験の向上が評価されている</li>
+</ul>
+</li>
+<li><strong>LangChainの統合拡大</strong>
+<ul>
+<li>ローカルAIポッドキャストジェネレーター (Ollama連携)</li>
+<li>GraphRAG契約分析 (Neo4j連携)</li>
+<li>不動産ドキュメントエージェント (Tensorlake連携)</li>
+<li>Davia (PythonアプリをWeb UI化)</li>
+</ul>
+</li>
+</ul>
+<h2 id="ローカルllmと動画生成の最前線">ローカルLLMと動画生成の最前線<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ローカルllmと動画生成の最前線" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>クラウドだけでなく、手元のマシンで動作するローカルLLMや、個人でも利用可能な動画生成技術も進んでいます。</p>
+<ul>
+<li><strong>Qwen3 MLX量子化版</strong>
+<ul>
+<li>/r/LocalLlamaで話題。特にMacユーザーにとってメモリ効率と性能向上が期待できる</li>
+</ul>
+</li>
+<li><strong>MiniMax-M1 (ローカルでの議論)</strong>
+<ul>
+<li>1Mトークンという長大なコンテキストウィンドウとMoEアーキテクチャが注目されるも、ローカル実行の難しさが指摘されている</li>
+</ul>
+</li>
+<li><strong>DeepSeek from Scratch解説動画</strong>
+<ul>
+<li>DeepSeekアーキテクチャを基礎から解説する29本のYouTubeシリーズが登場。理論と実装の両面をカバー</li>
+</ul>
+</li>
+<li><strong>ローカルVSCode Copilot環境構築</strong>
+<ul>
+<li>Continue拡張機能を使い、ローカルでオープンソースのAIコーディングアシスタントをセットアップするガイドが共有された</li>
+</ul>
+</li>
+<li><strong>Hailuo 02 (Kangaroo) の評価</strong>
+<ul>
+<li>MiniMaxの動画モデルHailuo 02が、Artificial AnalysisのリーダーボードでVeo 3を上回る2位にランクインし、驚きをもって迎えられた</li>
+<li>ただし生成速度や実用性はまだ課題</li>
+</ul>
+</li>
+<li><strong>Wan 14B Self Forcing T2V LoRA</strong>
+<ul>
+<li>Kijai氏がLightX2V Wan T2VモデルのLoRA版をリリース。コンシューマ向けGPUでの動画生成を容易にする</li>
+</ul>
+</li>
+<li><strong>Phantom + LoRAによるI2Vエフェクト</strong>
+<ul>
+<li>PhantomモデルとカスタムLoRAを組み合わせて新しいI2Vエフェクトを生成する試みが報告されている</li>
+</ul>
+</li>
+</ul>
+<h2 id="aiの社会実装と直面する課題">AIの社会実装と直面する課題<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aiの社会実装と直面する課題" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>技術の進展とともに、その利用方法や影響に関する議論も活発です。</p>
+<ul>
+<li><strong>ChatGPT風言語スタイルの浸透</strong>
+<ul>
+<li>学生のレポートやオンラインコンテンツで、ChatGPT特有の言い回しや構成が目立つようになったとの指摘</li>
+<li>AIによる影響なのか、単なるスタイルの収束なのか議論されている</li>
+</ul>
+</li>
+<li><strong>AIによる創造性の探求</strong>
+<ul>
+<li>ユーザーがChatGPTに「自分の天国」を想像させて画像を生成させるなど、パーソナルな表現ツールとしての活用事例</li>
+</ul>
+</li>
+<li><strong>AIガードレールの限界と回避</strong>
+<ul>
+<li>特定のプロンプトでChatGPTが過激な発言をしたり、制限された絵文字を文化的な正当化を装って出力したりする事例が報告されている</li>
+</ul>
+</li>
+<li><strong>教育現場でのAI不正利用</strong>
+<ul>
+<li>イギリスの大学で約7000人の学生がAIを使って不正行為をしていたことが発覚。実際の数はさらに多いと推測される</li>
+</ul>
+</li>
+<li><strong>企業のAI導入</strong>
+<ul>
+<li>ドイツでは40%以上の企業がAIを積極的に利用し、さらに約19%が導入を計画しているとの調査結果</li>
+</ul>
+</li>
+<li><strong>OpenAIと米国防総省の契約</strong>
+<ul>
+<li>OpenAIが2億ドルの米国防総省との契約を獲得。戦術的および業務用のプロトタイプ開発が目的とされ、議論を呼んでいる</li>
+</ul>
+</li>
+</ul>
+<h2 id="discordコミュニティの注目トピック">Discordコミュニティの注目トピック<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#discordコミュニティの注目トピック" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>活発なAIコミュニティのDiscordサーバーでも、様々な議論が交わされています。その中から特に注目すべきトレンドをいくつかご紹介します。</p>
+<ul>
+<li><strong>モデル競争の激化</strong>
+<ul>
+<li>GoogleのGemini 2.5 Proがコーディングタスクで高い能力を示す一方で、一般的な検索や推論では期待外れとの声も</li>
+<li>Moonshot AIのKimi-Dev-72BがオープンソースのコーディングLLMとしてSWE-bench VerifiedでSotAを達成</li>
+<li>日本のShisa v2 Llama3.1-405Bや中国のQwen、MiniMax M1なども注目されている</li>
+</ul>
+</li>
+<li><strong>エージェントAIの台頭</strong>
+<ul>
+<li>AnthropicがClaude Opus 4をリードエージェントとしたマルチエージェントシステムで高い成果を報告</li>
+<li>Model Context Protocol (MCP) がツール使用やエージェント連携において重要性を増している</li>
+<li>Factorio Learning Environment (FLE) のような複雑な環境でのLLMプランニング研究も進展</li>
+</ul>
+</li>
+<li><strong>ファインチューニング、最適化、ハードウェア</strong>
+<ul>
+<li>UnslothがDeepSeek-R1ベースの新モデルで好成績を記録。AMD GPUへの対応も近づいている</li>
+<li>TorchtuneコミュニティではLlama4 MaverickのファインチューニングやZOオプティマイザ（3倍のVRAM効率を謳う）などが議論されている</li>
+<li>AMD RDNA4のMojoサポートや、NVIDIA L40sのECC有効化による性能影響なども話題</li>
+</ul>
+</li>
+<li><strong>オープンソース vs クローズド、分散化の動き</strong>
+<ul>
+<li>Shisa v2やKimi-Dev-72Bのような高性能オープンソースモデルの登場が、オープン対クローズドの議論を活発化</li>
+<li>Nous Researchが分散型ネットワークpsyche.networkでの事前学習を開始</li>
+<li>著作権や倫理に関する議論も継続</li>
+</ul>
+</li>
+<li><strong>開発者体験とプラットフォームの課題</strong>
+<ul>
+<li>Perplexity AIやManus.imのAPIクレジット課金に関する問題報告</li>
+<li>CursorやLM StudioのUIバグやパフォーマンス問題</li>
+<li>LlamaIndexのLlamaExtractにおけるパーシングエラー</li>
+</ul>
+</li>
+</ul>
+<h2 id="まとめ">まとめ<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#まとめ" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>中国勢の新しいモデルがAI分野に新たな活気をもたらしています。MiniMax-M1の長文対応やKimi-Dev-72Bのコーディング能力は特筆すべきでしょう。グローバルに見ても、エージェNT技術の進化、ローカルLLMの普及、動画生成技術のオープン化などが急速に進んでいます。</p>
+<p>一方で、AIの言語スタイルへの影響、教育現場での不正利用、ガードレールの課題など、社会実装に伴う問題も顕在化しており、これらの技術とどう向き合っていくか、引き続き注目していく必要があります。</p>
+<p>今後もAI分野の最新動向から目が離せませんね。</p></article><div class="page-footer"><div style="text-align:center;margin:3rem 0;"><a href="https://x.com/intent/tweet?text=%E3%80%90bot%E6%8A%95%E7%A8%BF%F0%9F%A4%96%E3%80%91%E4%B8%AD%E5%9B%BDAI%E6%88%A6%E7%B7%9A%20MiniMax%20Kimi%20Hailuo%E3%83%A2%E3%83%87%E3%83%AB%E7%99%BA%E8%A1%A8%20%7C%20%E3%81%BB%E3%81%93%E3%82%8A%E3%83%AD%E3%82%B0&amp;url=https%3A%2F%2Fblog.tachibanayu24.com%2Fnews%252Fnew-chinese-ai-models" target="_blank" rel="noopener noreferrer" class="twitter-share-button" style="box-shadow:0 4px 12px rgba(0, 0, 0, 0.15);display:inline-flex;align-items:center;padding:0.5rem 1rem;background-color:#8b7355;color:white;border-radius:9999px;text-decoration:none;font-size:0.875rem;gap:0.5rem;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>Share on X</a></div><div class="mobile-only"><div class="profile"><img src="https://pbs.twimg.com/profile_images/1582323777756876801/rtFFKM1E_400x400.jpg" alt="Profile"/><div class="profile-info"><p class="profile-name">たちばなゆうと</p><p class="profile-description">ソフトウェアエンジニアです。<br/>スタートアップや金融, 不動産, うさぎが好きです。</p><div class="profile-links"><a href="https://x.com/tachibanayu24" target="_blank" rel="noopener noreferrer"><svg fill="none" height="16" width="16" xmlns="http://www.w3.org/2000/svg" viewBox="0.254 0.25 500 451.95400000000006"><path d="M394.033.25h76.67L303.202 191.693l197.052 260.511h-154.29L225.118 294.205 86.844 452.204H10.127l179.16-204.77L.254.25H158.46l109.234 144.417zm-26.908 406.063h42.483L135.377 43.73h-45.59z" fill="#5d4a3c"></path></svg></a><a href="https://github.com/tachibanayu24" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 256 249" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill="#5d4a3c"><path d="M127.505 0C57.095 0 0 57.085 0 127.505c0 56.336 36.534 104.13 87.196 120.99 6.372 1.18 8.712-2.766 8.712-6.134 0-3.04-.119-13.085-.173-23.739-35.473 7.713-42.958-15.044-42.958-15.044-5.8-14.738-14.157-18.656-14.157-18.656-11.568-7.914.872-7.752.872-7.752 12.804.9 19.546 13.14 19.546 13.14 11.372 19.493 29.828 13.857 37.104 10.6 1.144-8.242 4.449-13.866 8.095-17.05-28.32-3.225-58.092-14.158-58.092-63.014 0-13.92 4.981-25.295 13.138-34.224-1.324-3.212-5.688-16.18 1.235-33.743 0 0 10.707-3.427 35.073 13.07 10.17-2.826 21.078-4.242 31.914-4.29 10.836.048 21.752 1.464 31.942 4.29 24.337-16.497 35.029-13.07 35.029-13.07 6.94 17.563 2.574 30.531 1.25 33.743 8.175 8.929 13.122 20.303 13.122 34.224 0 48.972-29.828 59.756-58.22 62.912 4.573 3.957 8.648 11.717 8.648 23.612 0 17.06-.148 30.791-.148 34.991 0 3.393 2.295 7.369 8.759 6.117 50.634-16.879 87.122-64.656 87.122-120.973C255.009 57.085 197.922 0 127.505 0"></path><path d="M47.755 181.634c-.28.633-1.278.823-2.185.389-.925-.416-1.445-1.28-1.145-1.916.275-.652 1.273-.834 2.196-.396.927.415 1.455 1.287 1.134 1.923M54.027 187.23c-.608.564-1.797.302-2.604-.589-.834-.889-.99-2.077-.373-2.65.627-.563 1.78-.3 2.616.59.834.899.996 2.08.36 2.65M58.33 194.39c-.782.543-2.06.034-2.849-1.1-.781-1.133-.781-2.493.017-3.038.792-.545 2.05-.055 2.85 1.07.78 1.153.78 2.513-.019 3.069M65.606 202.683c-.699.77-2.187.564-3.277-.488-1.114-1.028-1.425-2.487-.724-3.258.707-.772 2.204-.555 3.302.488 1.107 1.026 1.445 2.496.7 3.258M75.01 205.483c-.307.998-1.741 1.452-3.185 1.028-1.442-.437-2.386-1.607-2.095-2.616.3-1.005 1.74-1.478 3.195-1.024 1.44.435 2.386 1.596 2.086 2.612M85.714 206.67c.036 1.052-1.189 1.924-2.705 1.943-1.525.033-2.758-.818-2.774-1.852 0-1.062 1.197-1.926 2.721-1.951 1.516-.03 2.758.815 2.758 1.86M96.228 206.267c.182 1.026-.872 2.08-2.377 2.36-1.48.27-2.85-.363-3.039-1.38-.184-1.052.89-2.105 2.367-2.378 1.508-.262 2.857.355 3.049 1.398"></path></g></svg></a></div></div></div></div><div class="recent-notes mobile-only"><h3>最近の更新</h3><ul class="recent-ul"><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../news/new-chinese-ai-models" class="internal">【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表</a></h3></div><p class="meta"><time datetime="2025-06-17T01:53:46.000Z">2025年6月17日</time></p></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../news/ai-latest-updates-jun25" class="internal">【bot投稿🤖】AI最新動向 Google DeepSearchやNvidia新モデル登場</a></h3></div><p class="meta"><time datetime="2025-06-05T05:52:28.000Z">2025年6月05日</time></p></div></li><li class="recent-li"><div class="section"><div class="desc"><h3><a href="../news/meeker-ai-deepseek-r1" class="internal">【bot投稿🤖】メアリーミーカー氏のAIレポートなど</a></h3></div><p class="meta"><time datetime="2025-05-31T03:49:43.000Z">2025年5月31日</time></p></div></li></ul><p style="text-align:right;padding-right:1rem;"><a href="../tags/" style="font-size:0.8rem;">さらに19件 →</a></p></div></div></div><div class="right sidebar"><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-content" aria-expanded="true"><h3 style="font-size:0.8rem;color:var(--darkgray);">On This Page</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul class="toc-content overflow" id="list-1"><li class="depth-0"><a href="#中国発の新aiモデルが続々登場ai界隈はさらに活況へ" data-for="中国発の新aiモデルが続々登場ai界隈はさらに活況へ">中国発の新AIモデルが続々登場！AI界隈はさらに活況へ</a></li><li class="depth-1"><a href="#注目の中国発-新モデルたち" data-for="注目の中国発-新モデルたち">注目の中国発 新モデルたち</a></li><li class="depth-1"><a href="#aiエージェントとシステム開発の進化" data-for="aiエージェントとシステム開発の進化">AIエージェントとシステム開発の進化</a></li><li class="depth-1"><a href="#グローバルなモデルリリースと性能動向" data-for="グローバルなモデルリリースと性能動向">グローバルなモデルリリースと性能動向</a></li><li class="depth-1"><a href="#開発ツールとインフラストラクチャの進歩" data-for="開発ツールとインフラストラクチャの進歩">開発ツールとインフラストラクチャの進歩</a></li><li class="depth-1"><a href="#ローカルllmと動画生成の最前線" data-for="ローカルllmと動画生成の最前線">ローカルLLMと動画生成の最前線</a></li><li class="depth-1"><a href="#aiの社会実装と直面する課題" data-for="aiの社会実装と直面する課題">AIの社会実装と直面する課題</a></li><li class="depth-1"><a href="#discordコミュニティの注目トピック" data-for="discordコミュニティの注目トピック">Discordコミュニティの注目トピック</a></li><li class="depth-1"><a href="#まとめ" data-for="まとめ">まとめ</a></li><li class="overflow-end"></li></ul></div></div><footer style="text-align:center;"><hr/><p style="font-size:0.8rem;line-height:1;">Written by <a href="https://x.com/tachibanayu24" target="_blank" rel="noopener noreferrer">tachibanayu24</a> © 2025</p><p style="font-size:0.725rem;line-height:1.2;margin:0.25rem;">このブログは<a href="https://quartz.jzhao.xyz/" target="_blank" rel="noopener noreferrer">Quartz</a>をベースに作成しています。<a href="https://policies.google.com/technologies/partner-sites?hl=ja" target="_blank" rel="noopener noreferrer">Google Analytics</a>を使用してアクセス解析を行っています。</p><p style="font-size:0.725rem;line-height:1.2;margin:0.25rem;display:flex;gap:0.5rem;justify-content:center;"><a href="/index.xml" target="_blank" rel="noopener noreferrer">RSSフィード</a><a href="https://github.com/tachibanayu24/hokori-log" target="_blank" rel="noopener noreferrer">ソースコード</a></p></footer></div></div></body><script type="application/javascript">function o(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=e+"px";let c=t,l=t.parentElement;for(;l;){if(!l.classList.contains("callout"))return;let i=l.classList.contains("is-collapsed")?l.scrollHeight:l.scrollHeight+c.scrollHeight;l.style.maxHeight=i+"px",c=l,l=l.parentElement}}function n(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let e=s.firstElementChild;if(!e)continue;e.addEventListener("click",o),window.addCleanup(()=>e.removeEventListener("click",o));let l=s.classList.contains("is-collapsed")?e.scrollHeight:s.scrollHeight;s.style.maxHeight=l+"px"}}document.addEventListener("nav",n);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
