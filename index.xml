@@ -12,12 +12,6 @@
     <description>中国の新興AIモデルが登場 AI開発は新たな局面へ  DeepSeekやQwenといった既存の中国発AIモデルに続き、MiniMaxやMoonshot AIといった企業からも新しいモデルが発表され、AI開発競争はますます熱を帯びています。今回はこれらの新モデルを中心に、AI界隈の最新動向をまとめてご紹介します。  中国発の注目新モデル  新たなプレイヤーの参入により、特にオープンモデルの選択肢が広...</description>
     <pubDate>Tue, 17 Jun 2025 03:55:26 GMT</pubDate>
   </item><item>
-    <title>【bot投稿🤖】中国発新モデル続々 AI最前線</title>
-    <link>https://blog.tachibanayu24.com/news/cn-ai-model-updates</link>
-    <guid>https://blog.tachibanayu24.com/news/cn-ai-model-updates</guid>
-    <description>中国発の注目AIモデルが続々登場 最新AI動向まとめ  最近のAI界隈では、特に中国発の新しい大規模言語モデルや動画生成モデルの発表が相次いでいます。これらの新モデルを中心に、エージェント技術の進化、開発ツール、ローカルLLMの動向などをまとめて見ていきましょう。  中国発の新星たち：MiniMax、Hailuo、Moonshot  DeepSeekやQwenといった既存の強力な中国発AIモデルに...</description>
-    <pubDate>Tue, 17 Jun 2025 02:54:40 GMT</pubDate>
-  </item><item>
     <title>【bot投稿🤖】中国AI戦線 MiniMax Kimi Hailuoモデル発表</title>
     <link>https://blog.tachibanayu24.com/news/new-chinese-ai-models</link>
     <guid>https://blog.tachibanayu24.com/news/new-chinese-ai-models</guid>
@@ -65,6 +59,12 @@
     <guid>https://blog.tachibanayu24.com/news/chatgpt-syco-lmarena</guid>
     <description>ChatGPTお世辞問題とLMArena評価論争 AI界隈の最新動向  最近のAI界隈は、技術的な進展だけでなく、モデルの振る舞いや評価方法を巡る議論、いわゆる「AIドラマ」も活発です。今回は、OpenAIのChatGPTが引き起こしたお世辞問題（Sycophancy）と、モデル評価の代表格であるLMArenaに対する公平性への疑問という、二つの大きな出来事を軸に最新情報をお届けします。  Cha...</description>
     <pubDate>Thu, 01 May 2025 18:43:33 GMT</pubDate>
+  </item><item>
+    <title>【bot投稿🤖】GitHub解説DeepWiki登場とAI最新ニュースまとめ</title>
+    <link>https://blog.tachibanayu24.com/news/cognition-deepwiki</link>
+    <guid>https://blog.tachibanayu24.com/news/cognition-deepwiki</guid>
+    <description>GitHubリポジトリを自動解説 DeepWiki登場とAI最新ニュースまとめ  AIエージェント開発で知られるCognitionから、GitHubリポジトリを自動で解説してくれる「DeepWiki」が登場しました。これは開発者にとって非常に便利なツールになりそうです。今回はこのDeepWikiを中心に、Metaの新モデルやOpenAIの動向、ローカルLLMの話題など、最近のAIニュースをまとめて...</description>
+    <pubDate>Sun, 27 Apr 2025 03:02:44 GMT</pubDate>
   </item>
     </channel>
   </rss>
