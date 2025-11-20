@@ -9,7 +9,7 @@ const Profile: QuartzComponent = ({displayClass, cfg}) => {
   return (
     <div class={classNames(displayClass)}>
       <div class="profile">
-        <img src="https://pbs.twimg.com/profile_images/1582323777756876801/rtFFKM1E_400x400.jpg" alt="Profile" />
+        <img src="https://pbs.twimg.com/profile_images/1933729565480005635/tj8ohxOy_400x400.jpg" alt="Profile" />
         <div class="profile-info">
           <p class="profile-name">たちばなゆうと</p>
           <p class="profile-description">ソフトウェアエンジニアです。<br />スタートアップや金融, 不動産, うさぎが好きです。</p>
